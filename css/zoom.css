@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+/*--- CSS Variable ---*/
+:root {
+    /*--- Colors used---*/
+    --lightgrey: #f0f0f0;
+    --white: #fff;
+    --blue:#2d77da;
+    --buttonColor: #F26D21;
+    --almostBlack: #232333;
+    --darkgrey: #6d6d6d;
+    /*--- font style used---*/
+    --Lato: 'Lato', sans-serif;
+    /*transform*/
+    --scale: scale(1.2)
+}
+
+
+
 *{margin:0;Padding:0;}
-body{background-color: #f0f0f0;}
+body{background-color:var(--lightgrey);}
 
 header{
-    background-color: #fff;
+    background-color: var(--white);
     height: 64px;
     box-shadow: 0 0 2px rgb(0 0 0 / 20%);
-    z-index: 300;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 300;
 }
 header img{
     position: absolute;
@@ -19,15 +37,15 @@ header img{
     transition: .3s transform ease-in-out;
 }
 header img:hover{
-    transform: scale(1.2);
+    transform: var(--scale);
 }
 header section{
     position: absolute;
     right: 13%;
 }
 header section a{
-    color: #2d77da;
-    font-family: 'Lato', sans-serif;
+    color: var(--blue);
+    font-family: var(--Lato);
     text-decoration: none;
     font-size: 13px;
     line-height: 64px;
@@ -42,10 +60,10 @@ header section a:hover{
 #down{
     font-size: 7px;
 }
-
+/*------    Main Section     -------*/
 main{
     margin: 94px auto 60px auto;
-    background-color: #ffffff;
+    background-color: var(--white);
     height: auto;
     max-width: 1250px;
     text-align: center;
@@ -60,60 +78,64 @@ h1{
     line-height: 43px;
     letter-spacing: 0;
     margin-left: -5px;
-    color: #232333;
-    font-family: 'Lato', sans-serif;
+    color: var(--almostBlack);
+    font-family: var(--Lato);
     font-style: normal;
     font-weight: bold;
     margin-bottom: 15px;
 }
 h2{
-    color: #232333;
-    font-family: 'Lato', sans-serif;
+    color: var(--almostBlack);
+    font-family: var(--Lato);
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
     margin-bottom: 20px;
 }
 button{
-    background: #F26D21;
+    background: var(--buttonColor);
     padding: 8px 16px;
     margin: 9px 0;
     border-radius: 12px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 550;
     line-height: 22px;
     border: none;
-    color: white;
-    font-family: Lato, sans-serif;
+    color: var(--white);
+    font-family: var(--Lato);
     transition: .3s transform ease-in-out;
 }
 button:hover{
-    transform: scale(1.2);
+    transform: var(--scale);
 }
 #mainIMG{
     margin: 80px 80px 72px 80px;
-    width: 660px;
-    height:520px;
+    width:  660px;
+    height: 520px;
 }
+
+/*------    Contact US Section     -------*/
+
 #contactUs{
     font-size: 14px;
     line-height: 1.5;
-    font-family: Lato, sans-serif;
+    font-family: var(--Lato);
     margin-bottom: 20px;
     letter-spacing: normal;
     font-weight: 400;
 }
 #socialMediaSection{
     padding-bottom: 60px;
-
 }
 .socialIMG{
     padding: 2px;
     transition: .3s transform ease-in-out;
 }
 .socialIMG:hover{
-    transform: scale(1.2);
+    transform: var(--scale);
 }
+
+/*------    Footer Section     -------*/
 
 footer{
     text-align: center;
@@ -122,7 +144,7 @@ footer{
 }
 
 footer p {
-    color: #6d6d6d;
+    color: var(--darkgrey);
     line-height: 1.5;
     font-family: Lato, sans-serif;
     font-weight: 400;
@@ -133,10 +155,10 @@ footer p span {
     margin-right: .7em;
 }
 footer p span a{
-    color: #6d6d6d;
+    color: var(--darkgrey);
     text-decoration: none;
     line-height: 16.5px;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--Lato)
 }
 footer p span a:hover{
     text-decoration: underline;
