@@ -1,1 +1,62 @@
-*{margin: 0;padding:0}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+*{margin:0;Padding:0;}
+body{background-color:whitesmoke;font-family: 'Lato', sans-serif;}
+
+header{
+    background-color: #fff;
+    box-shadow: 0 1px 1px #bfbfbf;
+    height: 65px;
+    padding: 0 240px;
+    position: relative;
+}
+header img{
+    position: absolute;
+    left: 13%;
+    top: 29%;
+    width: 110px;
+
+}
+header section{
+    position: absolute;
+    right: 13.8%;
+    top: 33%;
+
+}
+header section a{
+    color: #2d77da;
+    text-decoration: none;
+    font-size: 13px;
+    margin: .5rem;
+}
+
+main{
+    margin: 30px auto;
+    background-color: #ffffff;
+    height: 1054px;
+    width: 1250px;
+    text-align: center;
+    padding: 4rem 3rem;
+}
+h1{
+    font-size: 36px;
+    line-height: 43px;
+}
+h2{
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: normal;
+    padding-top: 10px;
+}
+button{
+    background-color: #f36d20;
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+}
+#mainIMG{
+    width: 660px;
+    height:520px;
+}
