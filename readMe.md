@@ -2,4 +2,4 @@
 
 
 ## Demo
-![](img/sample.gif)
+![Zoom-Post-Attendee.html is the main site](img/sample.gif)
